@@ -31,10 +31,82 @@
    background-size: cover;
    background-position: center;
 }
+.gallery_main{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid #000; */
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+ 
+}
+.gallery h2{
+    margin-top: 20px;
+    font-size: 80px;
+
+}
+.gallery p{
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.card_main{
+    /* height: 500px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    /* align-items: center; */
+}
+.card{
+    height: 350px;
+    width: 26%;
+    margin-bottom: 40px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 @media screen and (max-width:480px){
     .bg{
         width: 100%;
         height: 300px;
     }
+    .gallery_main{
+        display: block;
+    }
+    .gallery h2{
+        margin-top: 20px;
+        font-size: 30px; 
+}
+.gallery p{
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.card_main{
+    flex-direction: column;
+}
+.card{
+    height: 300px;
+    width: 100%;
+}
 }
